@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Migo's Distribution</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        header img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        h2 {
+            font-size: 2.8em;
+            margin-bottom: 40px;
+            color: #5C0000;
+            text-align: center;
+        }
+        
+        h3 {
+            font-size: 1.5em;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            color: #5C0000;
+        }
+        
+        p {
+            font-size: 1.05em;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        
+        .service-box {
+            background: white;
+            padding: 35px;
+            border-radius: 8px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-left: 5px solid #8B3A3A;
+            margin-bottom: 20px;
+        }
+        
+        .service-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        .service-box h4 {
+            color: #5C0000;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        footer {
+            background: #2c2c2c;
+            color: #fff;
+            padding: 60px 20px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+        
+        .footer-section a {
+            color: #c41e3a;
+            text-decoration: none;
+        }
+
+        /* Mobile Responsive Design */
+        @media (max-width: 1024px) {
+            h2 { font-size: 2em; }
+            h3 { font-size: 1.3em; }
+            p { font-size: 1em; }
+        }
+        
+        @media (max-width: 768px) {
+            nav ul { gap: 1vw !important; }
+            nav a { font-size: 1.2vw !important; }
+            h2 { font-size: 1.6em; margin-bottom: 25px; }
+            h3 { font-size: 1.2em; }
+            p { font-size: 0.95em; }
+            section { padding: 60px 0; }
+            footer { padding: 40px 20px; gap: 20px; }
+            .service-box { padding: 25px; }
+        }
+        
+        @media (max-width: 480px) {
+            nav ul { gap: 0.8vw !important; flex-wrap: wrap; }
+            nav a { font-size: 1vw !important; }
+            h2 { font-size: 1.3em; margin-bottom: 20px; }
+            h3 { font-size: 1.05em; }
+            p { font-size: 0.9em; margin-bottom: 15px; }
+            .container { padding: 0 15px; }
+            section { padding: 40px 0; }
+            footer { padding: 30px 15px; flex-direction: column; text-align: center; }
+            .service-box { padding: 20px; margin-bottom: 15px; }
+            .services-grid { gap: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header/Banner -->
+    <header style="position: relative; display: inline-block; width: 100%;">
+        <img src="banner3.jpg" alt="Migo's Distribution" style="width: 100%; height: auto; display: block;">
+        
+        <!-- Navigation Bar (Overlaid on Banner under MIGO'S DISTRIBUTION) -->
+        <nav style="position: absolute; top: 62%; left: 62%; transform: translate(-50%, -50%); display: flex; justify-content: center; padding: 0; margin: 0; width: 100%;">
+            <ul style="list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; gap: 2vw;">
+                <li><a href="index.html" style="color: #fff; text-decoration: none; font-size: 1.5vw; font-weight: bold; transition: color 0.3s; text-transform: uppercase; letter-spacing: 0.5px; outline: none; -webkit-tap-highlight-color: transparent; -webkit-user-select: none; user-select: none;">HOME</a></li>
+                <li><a href="about.html" style="color: #fff; text-decoration: none; font-size: 1.5vw; font-weight: bold; transition: color 0.3s; text-transform: uppercase; letter-spacing: 0.5px; white-space: nowrap; outline: none; -webkit-tap-highlight-color: transparent; -webkit-user-select: none; user-select: none;">ABOUT US</a></li>
+                <li><a href="services.html" style="color: #fff; text-decoration: none; font-size: 1.5vw; font-weight: bold; transition: color 0.3s; text-transform: uppercase; letter-spacing: 0.5px; outline: none; -webkit-tap-highlight-color: transparent; -webkit-user-select: none; user-select: none;">SERVICES</a></li>
+                <li><a href="fleet.html" style="color: #fff; text-decoration: none; font-size: 1.5vw; font-weight: bold; transition: color 0.3s; text-transform: uppercase; letter-spacing: 0.5px; outline: none; -webkit-tap-highlight-color: transparent; -webkit-user-select: none; user-select: none;">FLEET</a></li>
+                <li><a href="login.html" style="color: #fff; text-decoration: none; font-size: 1.5vw; font-weight: bold; transition: color 0.3s; text-transform: uppercase; letter-spacing: 0.5px; outline: none; -webkit-tap-highlight-color: transparent; -webkit-user-select: none; user-select: none;">LOGIN</a></li>
+                <li><a href="contact.html" style="color: #fff; text-decoration: none; font-size: 1.5vw; font-weight: bold; transition: color 0.3s; text-transform: uppercase; letter-spacing: 0.5px; outline: none; -webkit-tap-highlight-color: transparent; -webkit-user-select: none; user-select: none;">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Services Section -->
+    <section style="background: white; padding: 80px 0;">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p style="text-align: center; font-size: 1.1em; max-width: 700px; margin-left: auto; margin-right: auto;">Migo's Distribution offers comprehensive fuel solutions tailored to meet the unique needs of every business in San Antonio.</p>
+            
+            <div class="services-grid">
+                <div class="service-box">
+                    <h4>Regular Delivery Service</h4>
+                    <p>Scheduled fuel deliveries on your preferred timeline. Whether weekly, bi-weekly, or monthly, we keep your fuel tanks full and your business running.</p>
+                </div>
+                
+                <div class="service-box">
+                    <h4>Emergency Fuel Delivery</h4>
+                    <p>Out of fuel? We provide 24/7 emergency delivery service to get your operations back online quickly. Available around the clock, every day of the year.</p>
+                </div>
+                
+                <div class="service-box">
+                    <h4>Fleet Fueling Programs</h4>
+                    <p>Comprehensive solutions for fleet operators including fuel cards, volume pricing, and detailed reporting to track consumption and manage costs.</p>
+                </div>
+                
+                <div class="service-box">
+                    <h4>Dealership Fuel Solutions</h4>
+                    <p>Specialized service for auto dealerships including premium fuel grades, convenient delivery schedules, and competitive wholesale pricing.</p>
+                </div>
+                
+                <div class="service-box">
+                    <h4>Bulk Tank Delivery</h4>
+                    <p>For larger operations, we deliver to your bulk storage tanks with automatic refill monitoring and preventive maintenance included.</p>
+                </div>
+                
+                <div class="service-box">
+                    <h4>Account Management</h4>
+                    <p>Every customer gets a dedicated account manager who understands your business and is available to answer questions and solve problems.</p>
+                </div>
+            </div>
+            
+            <h3>Industries We Serve</h3>
+            <p style="text-align: center; margin-bottom: 30px;">Migo's Distribution specializes in fueling San Antonio's essential service businesses.</p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                <div style="background: #f5f5f5; padding: 20px; border-radius: 8px; border-left: 5px solid #8B3A3A; text-align: center;">
+                    <h4 style="color: #5C0000; margin-bottom: 8px;">Auto Dealerships</h4>
+                    <p style="font-size: 0.9em; color: #666;">Inventory fueling</p>
+                </div>
+                <div style="background: #f5f5f5; padding: 20px; border-radius: 8px; border-left: 5px solid #8B3A3A; text-align: center;">
+                    <h4 style="color: #5C0000; margin-bottom: 8px;">Landscaping</h4>
+                    <p style="font-size: 0.9em; color: #666;">Equipment fuel</p>
+                </div>
+                <div style="background: #f5f5f5; padding: 20px; border-radius: 8px; border-left: 5px solid #8B3A3A; text-align: center;">
+                    <h4 style="color: #5C0000; margin-bottom: 8px;">Electricians</h4>
+                    <p style="font-size: 0.9em; color: #666;">Generator fuel</p>
+                </div>
+                <div style="background: #f5f5f5; padding: 20px; border-radius: 8px; border-left: 5px solid #8B3A3A; text-align: center;">
+                    <h4 style="color: #5C0000; margin-bottom: 8px;">HVAC & Mechanical</h4>
+                    <p style="font-size: 0.9em; color: #666;">Vehicle fuel</p>
+                </div>
+                <div style="background: #f5f5f5; padding: 20px; border-radius: 8px; border-left: 5px solid #8B3A3A; text-align: center;">
+                    <h4 style="color: #5C0000; margin-bottom: 8px;">Plumbers</h4>
+                    <p style="font-size: 0.9em; color: #666;">Fleet fuel</p>
+                </div>
+                <div style="background: #f5f5f5; padding: 20px; border-radius: 8px; border-left: 5px solid #8B3A3A; text-align: center;">
+                    <h4 style="color: #5C0000; margin-bottom: 8px;">General Contractors</h4>
+                    <p style="font-size: 0.9em; color: #666;">Equipment fuel</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-section">
+            <h5>About Migo's</h5>
+            <p>Family-owned fuel distribution company serving San Antonio. Committed to excellence, reliability, and exceptional customer service.</p>
+        </div>
+        
+        <div class="footer-section">
+            <h5>Quick Links</h5>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="fleet.html">Fleet Solutions</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        
+        <div class="footer-section">
+            <h5>Contact Info</h5>
+            <p>Phone: (210) 824-3892<br>
+            Email: info@migosdist.com<br>
+            San Antonio, Texas</p>
+        </div>
+    </footer>
+</body>
+</html>

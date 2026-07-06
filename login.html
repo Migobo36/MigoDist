@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Migo's Distribution</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #2c2c2c;
+            color: #fff;
+            padding-bottom: 0;
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        nav ul li a {
+            transition: background-color 0.3s ease;
+        }
+
+        .login-container {
+            max-width: 500px;
+            margin: 50px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .login-container h1 {
+            text-align: center;
+            color: #c41e3a;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        .login-container p {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #c41e3a;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #c41e3a;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .login-btn:hover {
+            background-color: #a01729;
+        }
+
+        .forgot-password {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .forgot-password a {
+            color: #c41e3a;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+
+        .signup-link {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .signup-link a {
+            color: #c41e3a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .signup-link a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #2c2c2c;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: #c41e3a;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header/Banner -->
+    <header style="position: relative; display: inline-block; width: 100%;">
+        <img src="banner3.jpg" alt="Migo's Distribution" style="width: 100%; height: auto; display: block;">
+        
+        <!-- Navigation Bar (Overlaid on Banner under MIGO'S DISTRIBUTION) -->
+        <nav style="position: absolute; top: 62%; left: 62%; transform: translate(-50%, -50%); display: flex; justify-content: center; padding: 0; margin: 0; width: 100%;">
+            <ul style="list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; gap: 2vw;">
+                <li><a href="index.html" style="color: #fff; text-decoration: none; font-size: 1.5vw; font-weight: bold; transition: color 0.3s; text-transform: uppercase; letter-spacing: 0.5px; outline: none; -webkit-tap-highlight-color: transparent; -webkit-user-select: none; user-select: none;">HOME</a></li>
+                <li><a href="about.html" style="color: #fff; text-decoration: none; font-size: 1.5vw; font-weight: bold; transition: color 0.3s; text-transform: uppercase; letter-spacing: 0.5px; white-space: nowrap; outline: none; -webkit-tap-highlight-color: transparent; -webkit-user-select: none; user-select: none;">ABOUT US</a></li>
+                <li><a href="services.html" style="color: #fff; text-decoration: none; font-size: 1.5vw; font-weight: bold; transition: color 0.3s; text-transform: uppercase; letter-spacing: 0.5px; outline: none; -webkit-tap-highlight-color: transparent; -webkit-user-select: none; user-select: none;">SERVICES</a></li>
+                <li><a href="fleet.html" style="color: #fff; text-decoration: none; font-size: 1.5vw; font-weight: bold; transition: color 0.3s; text-transform: uppercase; letter-spacing: 0.5px; outline: none; -webkit-tap-highlight-color: transparent; -webkit-user-select: none; user-select: none;">FLEET</a></li>
+                <li><a href="login.html" style="color: #fff; text-decoration: none; font-size: 1.5vw; font-weight: bold; transition: color 0.3s; text-transform: uppercase; letter-spacing: 0.5px; outline: none; -webkit-tap-highlight-color: transparent; -webkit-user-select: none; user-select: none;">LOGIN</a></li>
+                <li><a href="contact.html" style="color: #fff; text-decoration: none; font-size: 1.5vw; font-weight: bold; transition: color 0.3s; text-transform: uppercase; letter-spacing: 0.5px; outline: none; -webkit-tap-highlight-color: transparent; -webkit-user-select: none; user-select: none;">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Login Section -->
+    <div class="login-container">
+        <h1>Fuel Account Login</h1>
+        <p>Access your Migo's Distribution account to manage orders and payments</p>
+        
+        <form>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required placeholder="Enter your password">
+            </div>
+            
+            <button type="submit" class="login-btn">Log In</button>
+            
+            <div class="forgot-password">
+                <a href="#">Forgot your password?</a>
+            </div>
+        </form>
+        
+        <div class="signup-link">
+            Don't have an account? <a href="#">Create one here</a>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Migo's Distribution. All rights reserved.</p>
+        <p>
+            <a href="contact.html">Contact Us</a> | 
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Terms of Service</a>
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,184 @@
+================================================================================
+MIGO'S DISTRIBUTION WEBSITE - COMPLETE PAGE STRUCTURE
+================================================================================
+
+HOMEPAGE (index.html)
+─────────────────────────────────────────────────────────────────────────────
+Header: Logo + Navigation (Home | About | Services | Contact)
+Hero Section:
+  • Title: "Fuel for Less in San Antonio"
+  • Subtitle: "Guaranteed lowest prices on unleaded, premium, red diesel, 
+    and diesel. Free tanks. Free maintenance. No hidden costs."
+  • CTA Button: "Get Your Quote"
+
+Why Small Businesses Choose Migo's (4-box grid):
+  ✓ Lower Prices — Beat gas station prices guaranteed
+  ✓ Free Tanks — We provide and maintain fuel storage
+  ✓ No Contracts — Month-to-month service
+  ✓ Local Support — San Antonio-based service
+
+Four Fuels / One Price Section:
+  • Unleaded (standard gasoline)
+  • Premium (high-octane gasoline)
+  • Red Diesel (off-road diesel)
+  • Diesel (on-road diesel)
+  + Mention of target customers (dealerships, HVAC, plumbers, etc.)
+
+Contact Section:
+  • Heading: "Ready to Save on Fuel?"
+  • Phone: (210) XXX-XXXX [REPLACE]
+  • Availability: Mon–Fri, 8 AM–5 PM
+  • CTA Button: Implies calling
+
+Footer: Links to Services, About, Copyright
+
+
+ABOUT PAGE (about.html)
+─────────────────────────────────────────────────────────────────────────────
+Header: Same nav as homepage
+
+Main Content:
+  Intro Paragraph:
+    "Migo's Distribution is San Antonio's fuel partner for small businesses."
+    Core promise: Guaranteed low prices, free tanks, free maintenance
+
+The Migo's Advantage (highlighted box):
+    "Free fuel tank provision and maintenance"
+
+Why We Exist Section:
+    Problem statement: "Small business owners shouldn't have to choose 
+    between fuel quality and fuel costs"
+    Solution: "We cut out the middleman and pass savings directly to you"
+
+Our Promise (5-point checklist):
+  ✓ Guaranteed lowest prices
+  ✓ Free fuel tanks (fully maintained)
+  ✓ Reliable delivery on your schedule
+  ✓ No contracts (month-to-month only)
+  ✓ Direct support from a local business
+
+Who We Serve Section:
+    List of target businesses: dealerships, fleets, HVAC, plumbers, 
+    landscapers, construction, cemeteries
+
+Call-to-Action Box:
+    "Ready to Cut Fuel Costs?"
+    Phone consultation pitch
+    CTA: "Get Your Quote Today"
+
+Footer: Same as homepage
+
+
+SERVICES PAGE (services.html)
+─────────────────────────────────────────────────────────────────────────────
+Header: Same nav as homepage
+
+Main Content:
+  Intro:
+    "Migo's Distribution delivers fuel directly to your business at 
+    guaranteed low prices."
+
+The Fuels We Deliver (4-box grid):
+  • Unleaded — Standard gasoline for cars and light vehicles
+  • Premium — High-octane gasoline for performance vehicles
+  • Red Diesel — Off-road diesel for equipment and generators
+  • Diesel — On-road diesel for trucks and commercial fleets
+
+What's Included (5 service cards):
+
+  1. Free Fuel Tanks
+     "We provide and install fuel storage tanks at your location at zero cost."
+
+  2. Complete Tank Service
+     "Routine maintenance, inspections, and repairs—all included."
+
+  3. Scheduled & Emergency Delivery
+     "Regular delivery on your schedule, plus emergency fuel service."
+
+  4. Guaranteed Lowest Prices
+     "We beat gas station prices every time. No middleman markup."
+
+  5. Flexible Terms
+     "Month-to-month agreements with no long-term contracts."
+
+Who We Serve:
+    Bulleted list of 8 customer types
+
+Why Choose Migo's? (highlighted box):
+  ✓ Prices better than local gas stations
+  ✓ Free tanks, free maintenance, zero hidden costs
+  ✓ Local, responsive San Antonio service
+  ✓ No long-term contracts
+  ✓ Reliable delivery on your schedule
+  ✓ Direct support from people who understand your business
+  
+  Call-to-action: "Request a Quote"
+
+Footer: Same as homepage
+
+
+================================================================================
+NAVIGATION STRUCTURE
+================================================================================
+
+All pages have consistent navigation bar:
+  Logo (top left) | Home | About | Services | Contact
+
+Links work as follows:
+  From Homepage: about.html, services.html, #contact (local scroll)
+  From About: index.html, services.html, index.html#contact
+  From Services: index.html, about.html, index.html#contact
+
+Contact link always goes to Homepage #contact section for centralized contact
+
+
+================================================================================
+DESIGN CONSISTENCY
+================================================================================
+
+Colors:
+  Primary: #8B3A3A (Burgundy/dark red)
+  Secondary: #5C0000 (Darker burgundy)
+  Accent: #FFD700 (Gold/cream)
+  Background: White, light grays
+
+Typography:
+  Headers: Burgundy (#5C0000)
+  Body: Dark gray (#333)
+  Nav links: White (header), hover turns gold
+
+Layout:
+  Max width: 900px-1200px (comfortable reading)
+  Mobile responsive: Stacks vertically on phones
+  Padding: Generous whitespace for readability
+  Sections: 60px padding, clear visual separation
+
+Elements:
+  CTA Buttons: Burgundy with white text (or gold background)
+  Check marks: Burgundy, bold, 1.3em
+  Cards: Light gray background (#f9f9f9), burgundy top border (4px)
+  Boxes: Border-left style for highlighting important sections
+
+================================================================================
+KEY MESSAGING HIERARCHY
+================================================================================
+
+Level 1 (Immediate Impact):
+  "Fuel for Less in San Antonio"
+  "Guaranteed lowest prices"
+
+Level 2 (Proof Points):
+  Free tanks
+  Free maintenance
+  No contracts
+
+Level 3 (Details):
+  5-point promise
+  Service descriptions
+  Customer types
+
+Call-to-Action:
+  Every page ends with "Get Your Quote" / "Request a Quote"
+  Primary conversion: Phone call or contact form
+
+================================================================================
