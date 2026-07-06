@@ -57,12 +57,20 @@
         }
         
         @media (max-width: 768px) {
+            .industries-grid {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+            
             h2 {
                 font-size: 2.8em;
             }
         }
         
         @media (max-width: 480px) {
+            .industries-grid {
+                grid-template-columns: 1fr !important;
+            }
+            
             h2 {
                 font-size: 1.8em;
             }
@@ -175,7 +183,7 @@
         <div class="container">
             <h2>Industries We Serve</h2>
             <p style="text-align: center; max-width: 700px; margin-left: auto; margin-right: auto; margin-bottom: 40px;">Migo's Distribution fuels the businesses that keep San Antonio running. We specialize in mid-size service companies.</p>
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px;">
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px;" class="industries-grid">
                 <div style="background: white; padding: 25px; border-radius: 8px; border-top: 4px solid #8B3A3A; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
                     <h4 style="color: #5C0000; margin-bottom: 10px;">Auto Dealerships</h4>
                     <p style="font-size: 0.95em; color: #666;">Inventory fueling at wholesale prices. We provide reliable fuel supply for your entire inventory, keeping your lot fully operational for customer test drives and fleet operations.</p>
